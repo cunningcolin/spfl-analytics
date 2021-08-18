@@ -16,15 +16,25 @@ This was the first plot I learned to code in R and is probably the most common y
 I start my session by loading the following packages, although some of them may be overkill
 
 `library(data.table)
+
 library(dplyr)
+
 library(formattable)
+
 library(tidyr) 
+
 library(htmltools)
+
 library(webshot)
+
 library(knitr)
+
 library(kableExtra) 
+
 library(ggplot2)
+
 library(ggrepel)
+
 library(ggpubr)`
 
 
