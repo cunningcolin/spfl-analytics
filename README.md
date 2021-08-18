@@ -1,4 +1,3 @@
-[Modern_Fitba_Player_2021.csv](https://github.com/cunningcolin/spfl-analytics/files/7009836/Modern_Fitba_Player_2021.csv)
 # spfl-analytics
 Datasets and R tutorials for making visualisations of Scottish football
 
