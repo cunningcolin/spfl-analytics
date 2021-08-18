@@ -49,7 +49,10 @@ rast1 <- grid::rasterGrob(img1, interpolate = T)
 
 
 That dataset contains a lot of columns so I use the data.frame function to select the ones I'm interested in
-```df <- data.frame(Prem$Player.Name, Prem$Expected.Assists..p90, Prem$Expected.Goals.p90..exl.pens., Prem$Team, Prem$Total.minutes, Prem$Position.Group, Prem$Total.Goals - Prem$Penalty.Goals - Prem$Expected.Goals...exl.pens.)```
+
+```
+df <- data.frame(Prem$Player.Name, Prem$Expected.Assists..p90, Prem$Expected.Goals.p90..exl.pens., Prem$Team, Prem$Total.minutes, Prem$Position.Group, Prem$Total.Goals - Prem$Penalty.Goals - Prem$Expected.Goals...exl.pens.)
+```
 
 
 
