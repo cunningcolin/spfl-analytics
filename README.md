@@ -10,8 +10,6 @@ This is just a page where I'll post the code I use to create the various data vi
 
 This was the first plot I learned to code in R and is probably the most common you'll see on Football Analytics Twitter. Modern Fitba have kindly allowed me to share their dataset from the 20/21 Scottish Premiership season
 
-
-![modern-fitba](https://user-images.githubusercontent.com/87502071/129967459-0e827676-190d-47b5-973e-5464af84685d.png)
 [Modern_Fitba_Player_2021.csv](https://github.com/cunningcolin/spfl-analytics/files/7009842/Modern_Fitba_Player_2021.csv)
 
 
@@ -32,6 +30,9 @@ library(ggpubr)
 ```
 
 Now I add the logos that I'll use later to watermark my plot (you'll need to update the address to wherever you save these on your machine)
+
+
+<img src="https://user-images.githubusercontent.com/87502071/129967459-0e827676-190d-47b5-973e-5464af84685d.png" height="50">
 
 <img src="https://user-images.githubusercontent.com/87502071/129967192-066ebb98-aa2c-4d05-b1cc-818a60fc684b.png" height="50">
 
