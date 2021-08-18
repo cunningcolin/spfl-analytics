@@ -13,7 +13,8 @@ This was the first plot I learned to code in R and is probably the most common y
 [Modern_Fitba_Player_2021.csv](https://github.com/cunningcolin/spfl-analytics/files/7009842/Modern_Fitba_Player_2021.csv)
 
 
-I start my session by loading the following packages, although some of them may be overkill
+I start my session by loading the following packages (some of them may be overkill!) and then the CSV. You'll need to save this down to your machine then copy and paste the folder address into the brackers after _file="_)
+
 
 ```
 library(data.table)
@@ -27,9 +28,11 @@ library(kableExtra)
 library(ggplot2)
 library(ggrepel)
 library(ggpubr)
+
+Prem <- read.csv(file="C:/Users/User/Desktop/R Code & Graphics/Modern Fitba/Prem_202021.csv", header=TRUE, sep=",")
 ```
 
-Now I upload the logos that I'll use later to watermark my plot (you'll need to save these down then copy and paste the folder address into the brackers after _readPNG_)
+Now I upload the logos that I'll use later to watermark my plot (again you'll need to save these down then copy and paste the folder address into the brackers after _readPNG_)
 
 
 <img src="https://user-images.githubusercontent.com/87502071/129967459-0e827676-190d-47b5-973e-5464af84685d.png" height="100">      <img src="https://user-images.githubusercontent.com/87502071/129967192-066ebb98-aa2c-4d05-b1cc-818a60fc684b.png" height="50">
