@@ -32,7 +32,7 @@ library(ggpubr)
 
 Now I add the logos that I'll use later to watermark my plot (you'll need to update the address to wherever you save these on your machine)
 
-<img src="https://user-images.githubusercontent.com/87502071/129967192-066ebb98-aa2c-4d05-b1cc-818a60fc684b.png" width="100">
+<img src="https://user-images.githubusercontent.com/87502071/129967192-066ebb98-aa2c-4d05-b1cc-818a60fc684b.png" height="100">
 
 
 
