@@ -30,6 +30,19 @@ library(ggrepel)
 library(ggpubr)
 ```
 
+Now I add the logos that I'll use later to watermark my plot (you'll need to update the address to wherever you save these on your machine)
+
+![modern-fitba](https://user-images.githubusercontent.com/87502071/129966302-354ffe83-2e82-463b-8bd9-021ce61f4d0e.png)
+![ortecsports](https://user-images.githubusercontent.com/87502071/129966315-c5f4de64-dea8-44a5-a6d0-d887c2ac8c37.png)
+
+
+```
+img <- png::readPNG("C:/Users/User/Desktop/R Code & Graphics/Modern Fitba/ortecsports.png")
+rast <- grid::rasterGrob(img, interpolate = T)
+
+img1 <- png::readPNG("C:/Users/User/Desktop/R Code & Graphics/Modern Fitba/modern-fitba.png")
+rast1 <- grid::rasterGrob(img1, interpolate = T)
+```
 
 
 
