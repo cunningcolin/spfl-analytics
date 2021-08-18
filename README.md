@@ -33,7 +33,7 @@ library(ggpubr)
 Now I add the logos that I'll use later to watermark my plot (you'll need to update the address to wherever you save these on your machine)
 
 
-<img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Ffreebiesupply.com%2Flogos%2Fortec-sports-logo%2F&psig=AOvVaw1hp7EKJfsSK-lUQ5rNxrrQ&ust=1629404365152000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCLCQ5Liyu_ICFQAAAAAdAAAAABAD" width="100" height="100">
+https://www.google.com/url?sa=i&url=https%3A%2F%2Ffreebiesupply.com%2Flogos%2Fortec-sports-logo%2F&psig=AOvVaw1hp7EKJfsSK-lUQ5rNxrrQ&ust=1629404365152000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCLCQ5Liyu_ICFQAAAAAdAAAAABAD
 
 
 ```
