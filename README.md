@@ -35,7 +35,8 @@ Prem <- read.csv(file="C:/Users/User/Desktop/R Code & Graphics/Modern Fitba/Prem
 <br />
 Now I upload the logos that I'll use later to watermark my plot (again you'll need to save these down then copy and paste the folder address into the brackers after _readPNG_)
 
-<br />
+
+
 <img src="https://user-images.githubusercontent.com/87502071/129967459-0e827676-190d-47b5-973e-5464af84685d.png" height="100">      <img src="https://user-images.githubusercontent.com/87502071/129967192-066ebb98-aa2c-4d05-b1cc-818a60fc684b.png" height="50">
 
 
