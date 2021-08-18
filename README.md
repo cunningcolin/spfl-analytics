@@ -6,7 +6,7 @@ This is just a page where I'll post the code I use to create the various data vi
 
 
 
-## Player xG and xA Scatterplot
+## Player xG v xA Scatterplot
 
 This was the first plot I learned to code in R and is probably the most common you'll see on Football Analytics Twitter. Modern Fitba have kindly allowed me to share their dataset from the 20/21 Scottish Premiership season
 
