@@ -12,8 +12,8 @@ This is just a page where I'll post the code I use to create the various data vi
 [Modern_Fitba_Player_2021.csv](https://github.com/cunningcolin/spfl-analytics/files/7009842/Modern_Fitba_Player_2021.csv)
 
 
-...
-library(data.table)
 
-...
+`library(data.table)`
+
+
 
