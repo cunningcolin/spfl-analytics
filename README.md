@@ -51,6 +51,7 @@ rast1 <- grid::rasterGrob(img1, interpolate = T)
 That dataset contains a lot of columns so I use the data.frame function to select the ones I'm interested in and then subset to remove any players with less than 900 minutes played and who aren't midfielders or forwards
 
 
+ 
 ```
 df <- data.frame(Prem$Player.Name, Prem$Expected.Assists..p90, Prem$Expected.Goals.p90..exl.pens., Prem$Team, Prem$Total.minutes, Prem$Position.Group, Prem$Total.Goals - Prem$Penalty.Goals - Prem$Expected.Goals...exl.pens.)
 df <- subset(df, Prem.Total.minutes > 900 & (Prem.Position.Group == "Centre Midfield" | Prem.Position.Group == "Striker" | Prem.Position.Group == "Winger/Wide Midfield" ))
