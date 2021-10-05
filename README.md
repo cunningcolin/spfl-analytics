@@ -64,7 +64,7 @@ Prem_colors <- c("#E2001A", "#16973B", "#f29400", "#CC383F", "#005000", "#2F368F
 names(Prem_colors) <- levels(factor(c(levels(df$Prem.Team))))
 ```
 
-Now I create the scatterplot. 
+Now I create the scatterplot:
 - x and y inside the aes() are my xG and xA
 - color and label are self-explanatory
 - geom_point is the style and shape of the points 
@@ -81,6 +81,8 @@ theme_bw() +
 scale_colour_manual(name = df$Prem.Team, values = Prem_colors)
 ```
 
+
+<img src="https://user-images.githubusercontent.com/87502071/136096009-1194e347-8d30-46b2-ab94-ebce48458fee.png" height="500">
 
 
 
