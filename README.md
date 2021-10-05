@@ -57,6 +57,13 @@ df <- data.frame(Prem$Player.Name, Prem$Expected.Assists..p90, Prem$Expected.Goa
 df <- subset(df, Prem.Total.minutes > 900 & (Prem.Position.Group == "Centre Midfield" | Prem.Position.Group == "Striker" | Prem.Position.Group == "Winger/Wide Midfield" ))
 ```
 
+Colour pallette for the teams in alphabetical order
+
+```
+Prem_colors <- c("#E2001A", "#16973B", "#f29400", "#CC383F", "#005000", "#2F368F", "#ffcc00", "#FFBE00", "#0E00F7", "#040957", "#243F90", "Black")   
+names(Prem_colors) <- levels(factor(c(levels(df$Prem.Team))))
+```
+
 
 
 
