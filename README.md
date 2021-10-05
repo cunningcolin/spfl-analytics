@@ -65,11 +65,11 @@ names(Prem_colors) <- levels(factor(c(levels(df$Prem.Team))))
 ```
 
 Now I create the scatterplot:
-- x and y inside the aes() are my xG and xA
-- color and label are self-explanatory
-- geom_point is the style and shape of the points 
-- geom_abline is just an x=y line to highlight players that have an equal spread between the two stats
-- scale_x_continuous is the axis title and the limits
+- x and y inside the _aes()_ are my xG and xA
+- _color_ and _label_ are self-explanatory
+- _geom_point_ is the style and shape of the points 
+- _geom_abline_ is just an x=y line to highlight players that have an equal spread between the two stats
+- _scale_x_continuous_ is the axis title and the limits
 
 ```
 Plot <- ggplot(data = df, aes(x=Prem.Expected.Goals.p90..exl.pens., y=Prem.Expected.Assists..p90, color=Prem.Team, label=Prem.Player.Name))+ 
@@ -84,10 +84,37 @@ scale_colour_manual(name = df$Prem.Team, values = Prem_colors)
 
 <img src="https://user-images.githubusercontent.com/87502071/136096009-1194e347-8d30-46b2-ab94-ebce48458fee.png" height="500">
 
+That's a basic scatter but what about jazzing it up:
+- Create a subset for outliers and label them using _geom_label_repel_
+- Add in the watermarks using _annotation_custom_ (I find the positioning and sizing to be trial and error)
+- _ggtitle_ for a header
+
+```
+Plot1 <- Plot + geom_label_repel(data=df1, 
+                  box.padding   = 0.15, 
+                  point.padding = 0.2,
+		  #nudge_y = 0.1,
+		  #nudge_x = 0.1,
+                  size          = 5,
+                  force         = 15,
+show.legend=FALSE,
+                  segment.size  = 0.2,
+                  segment.color = "grey50") + theme(legend.position="bottom") + annotation_custom(rast, ymin = 0.47, ymax = 0.62, xmin = 0, xmax =0.2) + 
+annotation_custom(rast1, ymin=0.4, ymax = 0.5, xmin = -0.05, xmax =0.1) + 
+ggtitle("Expected goal contributions in Scottish Premiership 2020/21") +
+theme(plot.title=element_text(size=18, colour="black", hjust=0), axis.title=element_text(size=16)) +
+theme(legend.title = element_text(colour="white"), legend.text = element_text(size=14)) +
+theme(axis.text.x = element_text(size=14), axis.text.y = element_text(size=14))
+```
+
+<img src="https://user-images.githubusercontent.com/87502071/136097733-f79fe5b3-7fc0-4cff-b65b-f482de4802be.png" height="500">
 
 
+Once you're happy the last thing to do is save!
 
-
+```
+ggsave("Prem xG.png", plot = last_plot(), path="C:/Users/User/Desktop/R Code & Graphics/Modern Fitba/", height=9, width=16)
+```
 
 
 
