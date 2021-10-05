@@ -64,6 +64,31 @@ Prem_colors <- c("#E2001A", "#16973B", "#f29400", "#CC383F", "#005000", "#2F368F
 names(Prem_colors) <- levels(factor(c(levels(df$Prem.Team))))
 ```
 
+Now I create the scatterplot. 
+- x and y inside the aes() are my xG and xA
+- color and label are self-explanatory
+- geom_point is the style and shape of the points 
+- geom_abline is just an x=y line to highlight players that have an equal spread between the two stats
+- scale_x_continuous is the axis title and the limits
+
+```
+Plot <- ggplot(data = df, aes(x=Prem.Expected.Goals.p90..exl.pens., y=Prem.Expected.Assists..p90, color=Prem.Team, label=Prem.Player.Name))+ 
+geom_point(size=3, shape=20) +
+geom_abline(intercept = 0, linetype = 2, colour = "darkblue") + 
+scale_x_continuous(name = "Non-penalty Expected Goals per 90", limits = c(0, 0.61)) +
+scale_y_continuous(name = "Expected Assists per 90", limits = c(0, 0.60)) + 
+theme_bw() +
+scale_colour_manual(name = df$Prem.Team, values = Prem_colors)
+```
+
+
+
+
+
+
+
+
+
 
 
 
